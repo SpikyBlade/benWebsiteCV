@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css" type="text/css">
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+    <title>Google maps clone</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+
+    </style>
+    <script src="../scripts/maps.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="music.html">MUSIC</a></li>
+                <li><a href="maps.html">MAPS</a></li>
+            </ul>
+        </nav>
+        <h1 class="band-name band-name-large">Maps</h1>
+    </header>
+    <div id='map'></div>
+</body>
+</html>
