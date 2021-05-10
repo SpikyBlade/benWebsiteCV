@@ -13,7 +13,7 @@ let dis2Num = '';
 let result = null;
 let lastOparetion = '';
 let haveDot = false;
-
+let hasOperation = false;
 
 numbersEl.forEach(number => {
     number.addEventListener('click', (e)=> {
@@ -31,6 +31,7 @@ operationEl.forEach(operation => {
     operation.addEventListener('click', (e)=> {
         if (!dis2Num) result;
         haveDot = false;
+        hasOperation = false;
         const operationName = e.target.innerText;
         if(dis1Num && dis2Num && lastOparetion) {
             mathOperation();
@@ -68,6 +69,7 @@ function mathOperation() {
 equalEl.addEventListener('click', (e)=> {
     if(!dis1Num || !dis2Num) return;
     haveDot = false;
+    hasOperation = false;
     mathOperation();
     clearVar();
     display2El.innerText = result;
