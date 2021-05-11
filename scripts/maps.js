@@ -1,6 +1,6 @@
 mapboxgl.accessToken = "pk.eyJ1Ijoic3Bpa3libGFkZSIsImEiOiJja28xZzl0ZzEwOGVoMndvMzZwMXY3bmphIn0.hj_cu7YbbFa4HWCiEy-New";
 
-/*
+
 navigator.geolocation.getCurrentPosition(successLocation, errorLocation, {
     enableHighAccuracy: true
 });
@@ -32,7 +32,6 @@ function setupMap(center) {
       map.addControl(directions, 'top-left');
 
 }
-*/
 
 /*
 // Add in cordinates
@@ -144,7 +143,7 @@ map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 */
 
 
-
+/*
 // 3D model in maps
 var map = (window.map = new mapboxgl.Map({
     container: 'map',
@@ -255,3 +254,4 @@ map.on('style.load', function () {
 map.addLayer(customLayer, 'waterway-label');
 });
 
+*/

@@ -18,7 +18,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .nav ul {
@@ -59,7 +61,7 @@ html, body {
     padding-bottom: 10px;
 }
 
-.band-name {
+.page-name {
     text-align: center;
     margin: 0;
     font-size: 4em;
@@ -68,7 +70,7 @@ html, body {
     color: white;
 }
 
-.band-name-large {
+.page-name-large {
     font-size: 5em;
 }
 
@@ -84,7 +86,7 @@ html, body {
 .section-header {
     font-family: "Metal Mania";
     font-weight: normal;
-    color: #333;
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 2.5em;
 }
@@ -101,6 +103,7 @@ html, body {
     background-color: #56CCF2;
     color: white;
     padding: .25em 0;
+    margin-top: auto;
 }
 
 .main-footer-container {
@@ -169,13 +172,13 @@ html, body {
     background-color: #2D9CDB;
 }
 
-.tour-row {
+.article-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
     margin-bottom: 1em;
 }
 
-.tour-row:last-child {
+.article-row:last-child {
     border: none;
 }
 
@@ -338,3 +341,35 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+.articleTitle {
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+.articleImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(37, 33, 33, 0.842);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin: 10px 0px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
