@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("../assets/fonts/Booter - Zero Zero.woff") format("woff"),
-         url("../assets/fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300');
 
 * {
     box-sizing: border-box;
@@ -40,7 +33,7 @@ html, body {
 
 .main-nav {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: lighter;
     border-bottom: 1px solid rgba(255, 255, 255, .3)
 }
@@ -65,7 +58,7 @@ html, body {
     text-align: center;
     margin: 0;
     font-size: 4em;
-    font-family: "Booter - Zero Zero";
+    font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
     color: white;
 }
@@ -84,7 +77,7 @@ html, body {
     padding: 0 1.5em;
 }
 .section-header {
-    font-family: "Metal Mania";
+    font-family: "Open Sans";
     font-weight: normal;
     color: rgb(0, 0, 0);
     text-align: center;
